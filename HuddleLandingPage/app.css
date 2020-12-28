@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --VeryDarkCyan: hsl(192, 100%, 9%);
+  --VeryPaleBlue: hsl(207, 100%, 98%);
+  --Pink: hsl(322, 100%, 66%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/*Header*/
+.header-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.header-container img {
+  max-width: 120px;
+}
+
+.header-container button {
+  font-family: "Poppins", sans-serif;
+  color: var(--Pink);
+  border: 1px solid var(--Pink);
+  padding: 5px 20px;
+  border-radius: 50px;
+  background: transparent;
+  box-shadow: 4px 14px 29px -11px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+/*Intro*/
+.intro {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.intro h1 {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.intro p {
+  max-width: 450px;
+  margin: 20px auto;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.intro button {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--VeryPaleBlue);
+  font-weight: 500;
+  background: var(--Pink);
+  cursor: pointer;
+  padding: 15px 70px;
+  border-radius: 50px;
+  box-shadow: 4px 14px 29px -11px rgba(0, 0, 0, 0.75);
+}
+/*Comunity*/
+.community {
+  margin-top: 70px;
+}
+
+.screens img {
+  display: block;
+  max-width: 100%;
+}
+
+.engagement {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.communities img,
+.messages img {
+  width: 34px;
+  height: 30px;
+}
+
+.communities h2 {
+  font-size: 60px;
+  color: var(--VeryDarkCyan);
+}
+
+.communities p {
+  color: gray;
+  font-size: 14px;
+  text-align: center;
+}
+
+.messages h2 {
+  font-size: 60px;
+  color: var(--VeryDarkCyan);
+}
+
+.messages p {
+  color: gray;
+  font-size: 14px;
+  text-align: center;
+}
+
+/*Benefits*/
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.growTogether-background-images {
+  margin-top: 40px;
+  height: 650px;
+  background-image: url(images/bg-section-top-desktop-1.svg),
+    url( images/bg-section-bottom-desktop-1.svg);
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  background-size: 100% 20%;
+  display: flex;
+  align-items: center;
+}
+.background-color {
+  height: 400px;
+  width: 100vw;
+  background: var(--VeryPaleBlue);
+  display: flex;
+}
+
+.growTogether {
+  display: flex;
+  align-items: center;
+}
+
+.growTogether-text {
+  margin-right: 40px;
+}
+
+.growTogether h1 {
+  color: var(--VeryDarkCyan);
+  font-weight: 700;
+}
+
+.growTogether p {
+  margin-top: 30px;
+  color: var(--VeryDarkCyan);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.conversations {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.conversations-text {
+  margin-left: 40px;
+}
+
+.conversations h1 {
+  color: var(--VeryDarkCyan);
+  font-weight: 400;
+}
+
+.conversations p {
+  margin-top: 30px;
+  color: var(--VeryDarkCyan);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.users-background-images {
+  margin-top: 40px;
+  height: 650px;
+  background-image: url( images/bg-section-top-desktop-2.svg),
+    url( images/bg-section-bottom-desktop-2.svg);
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  background-size: 100% 20%;
+  display: flex;
+  align-items: center;
+}
+
+.users {
+  display: flex;
+  align-items: center;
+}
+
+.users-text {
+  margin-right: 40px;
+}
+
+.users h1 {
+  color: var(--VeryDarkCyan);
+  font-weight: 700;
+}
+
+.users p {
+  margin-top: 30px;
+  color: var(--VeryDarkCyan);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.are-you-ready {
+  text-align: center;
+  margin-top: 67px;
+}
+
+.are-you-ready-btn {
+  margin-top: 30px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--VeryPaleBlue);
+  font-weight: 500;
+  background: var(--Pink);
+  cursor: pointer;
+  padding: 15px 70px;
+  border-radius: 50px;
+  box-shadow: 4px 14px 29px -11px rgba(0, 0, 0, 0.75);
+}
+
+.more-info {
+  margin-top: 150px;
+  background-image: url( images/bg-footer-top-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 30%;
+  padding-top: 120px;
+}
+
+.more-info-background-color {
+  background-color: var(--VeryDarkCyan);
+}
+
+.more-info-container {
+  box-sizing: border-box;
+  max-width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.about-us {
+  width: 250px;
+}
+
+.about-us p {
+  font-size: 10px;
+  color: var(--VeryPaleBlue);
+  margin-bottom: 20px;
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
+  filter: invert();
+  margin-right: 5px;
+  opacity: 1;
+}
+
+.social-media img:hover {
+  cursor: pointer;
+  opacity: 0.2;
+  transition: ease-in 230ms;
+}
+
+.newsletter {
+  max-width: 400px;
+  color: var(--VeryPaleBlue);
+}
+
+.newsletter h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.newsletter p {
+  font-size: 10px;
+  max-width: 200px;
+  margin: 20px 0;
+}
+
+form input {
+  box-sizing: border-box;
+  height: 27px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+form button {
+  background: var(--Pink);
+  border: none;
+  font-size: 10px;
+  color: var(--VeryPaleBlue);
+  border-radius: 3px;
+  height: 27px;
+  padding: 0 15px;
+  opacity: 1;
+}
+
+form button:hover {
+  cursor: pointer;
+  background: var(--VeryPaleBlue);
+  color: var(--Pink);
+  opacity: 1;
+  transition: ease-in 0.5s;
+}
+
+@media (max-width: 650px) {
+  .engagement {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .messages {
+    margin-top: 30px;
+  }
+
+  .benefits img {
+    max-width: 300px;
+  }
+
+  .growTogether-background-images {
+    margin-top: 40px;
+    height: 650px;
+    background-image: url( images/bg-section-top-mobile-1.svg),
+      url( images/bg-section-bottom-mobile-1.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: 100% 20%;
+    display: flex;
+    align-items: center;
+  }
+
+  .users-background-images {
+    margin-top: 40px;
+    height: 650px;
+    background-image: url( images/bg-section-top-mobile-2.svg),
+      url( images/bg-section-bottom-mobile-2.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: 100% 20%;
+    display: flex;
+    align-items: center;
+  }
+
+  .background-color {
+    margin-top: 10px;
+  }
+  .growTogether,
+  .users {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    max-width: 650px;
+    padding: 0;
+  }
+
+  .growTogether-text,
+  .users-text {
+    margin-right: 0;
+    max-width: 450px;
+  }
+  .conversations {
+    margin-top: 60px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .conversations-text {
+    margin-left: 0;
+    max-width: 450px;
+  }
+
+  .more-info {
+    margin-top: 150px;
+    background-image: url( images/bg-footer-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 10%;
+    padding-top: 40px;
+  }
+
+  .more-info-container {
+    flex-direction: column-reverse;
+    padding-top: 400px;
+    align-items: center;
+  }
+
+  .newsletter {
+    width: 250px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form input {
+    max-width: 100%;
+    margin-right: 0;
+  }
+  form button {
+    margin-top: 5px;
+    max-width: 100px;
+    align-self: flex-end;
+  }
+}

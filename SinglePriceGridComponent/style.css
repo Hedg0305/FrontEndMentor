@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+  --Cyan: hsl(179, 62%, 43%);
+  --LightCyan: hsla(179, 62%, 43%, 0.829);
+  --BrightYellow: hsl(71, 73%, 54%);
+}
+
+body {
+  background: var(--LightGray);
+}
+
+main {
+  height: 100vh;
+  font-family: "Karla", sans-serif;
+}
+
+.info {
+  background-color: #fff;
+  max-width: 600px;
+  margin: 60px auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.info-main {
+  text-align: left;
+  box-sizing: border-box;
+  height: 200px;
+
+  padding: 30px;
+  background: white;
+}
+
+.info-main h1 {
+  color: var(--Cyan);
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.info-main p:nth-of-type(1) {
+  color: var(--BrightYellow);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.info-main p:nth-of-type(2) {
+  color: var(--GrayishBlue);
+}
+
+.info-more-about {
+  display: flex;
+  flex-direction: row;
+}
+
+.price {
+  background: var(--Cyan);
+  box-sizing: border-box;
+  width: 300px;
+  padding: 30px 40px;
+  color: white;
+}
+
+.price h1 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.price-month {
+  display: flex;
+  align-items: center;
+}
+
+.price-month p {
+  display: inline-block;
+}
+
+.price-month p:nth-of-type(1) {
+  font-size: 1.562rem;
+  font-weight: 600;
+}
+
+.price-month p:nth-of-type(2) {
+  font-size: 0.875rem;
+  margin-left: 15px;
+}
+
+.price-label {
+  font-size: 14px;
+  margin: 10px 0 20px 0;
+}
+
+.signup-btn {
+  color: white;
+  background: var(--BrightYellow);
+  border: none;
+
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 80px;
+  box-shadow: 6px 6px 15px -6px rgba(102, 98, 102, 1);
+}
+
+.reasons {
+  background: var(--LightCyan);
+  width: 300px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.reasons h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+}
+
+.reasons ul {
+  list-style-type: none;
+  color: white;
+  font-weight: lighter;
+  font-size: 0.8125rem;
+}
+
+@media (max-width: 750px) {
+  .info {
+    margin: 60px 20px;
+  }
+
+  .info-main {
+    height: 250px;
+  }
+
+  .info-more-about {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .price,
+  .reasons {
+    width: 600px;
+  }
+}
